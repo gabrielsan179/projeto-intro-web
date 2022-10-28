@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto web</title>
-    <script src="index.js"></script>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caças</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styled.css" />
+  </head>
+  <body>
+    <div id="telaToda">
+      <header><h1>Caças</h1></header>
+      <main id="containerMain">
+        <div class="pesquisa">
+          <form id="formB">
+            <label for="pesq">Busca</label>
+            <input
+              type="text"
+              id="pesq"
+              name="pesq"
+              placeholder="Pesquise aqui"
+              value=""
+              onchange="valorDoInputAualizado()"
+            />
+            <button type="button" onclick="buscadorBotn(caças)">
+              <img class="imgBut" src="../img/aviao.png" alt="" />
+            </button>
+          </form>
+        </div>
+        <div id="main">
+            
+        </div>
+        <button type="button" onclick="inicio()">Reset</button>
+      </main>
+      <footer>
+        Gabriel Santos Da Silva:
+        <a href="https://github.com/gabrielsan179"
+          ><img class="imgBut1" src="../img/github-logo.png" alt="" />
+        </a>
+      </footer>
+    </div>
+  </body>
 </html>
